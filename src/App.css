@@ -97,6 +97,49 @@ nav a.active {
 
 .block { display: block; }
 
+/* Animation utilities */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.inline-block { display: inline-block; }
+.h-8 { height: 2rem; }
+.w-8 { width: 2rem; }
+.border-b-2 { border-bottom-width: 2px; }
+.rounded-full { border-radius: 9999px; }
+
+.space-x-4 > * + * { margin-left: 1rem; }
+.space-y-2 > * + * { margin-top: 0.5rem; }
+
+.text-xs { font-size: 0.75rem; }
+.text-red-600 { color: #dc2626; }
+.text-green-600 { color: #16a34a; }
+.text-gray-500 { color: #6b7280; }
+
+.bg-gray-50 { background-color: #f9fafb; }
+.bg-green-600 { background-color: #16a34a; }
+.bg-green-700 { background-color: #15803d; }
+
+.border-red-300 { border-color: #fca5a5; }
+.border-green-300 { border-color: #86efac; }
+
+.hover\:bg-green-700:hover { background-color: #15803d; }
+
+.disabled\:opacity-50:disabled { opacity: 0.5; }
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+
 /* Responsive design */
 @media (min-width: 768px) {
   .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }

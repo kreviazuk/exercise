@@ -11,6 +11,7 @@
     "routes:generate": "@tanstack/router-cli generate"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.84.2",
     "@tanstack/react-router": "^1.131.5",
     "@tanstack/router-devtools": "^1.131.5",
     "react": "^19.1.1",
